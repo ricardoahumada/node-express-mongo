@@ -1,0 +1,30 @@
+{
+  "name": "node-api",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scotch-io/node-token-authentication"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "set MONGO_URL=mongodb://localhost:27017/trainingbox && node server.js"
+  },
+  "author": "Ricardo Ahumada",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cors": "^2.8.4",
+    "express": "~4.16.1",
+    "jwt-express": "^1.1.0",
+    "jwt-express-decode": "^0.1.2",
+    "jwt-simple": "^0.5.1",
+    "moment": "^2.22.0",
+    "mongoose": "~4.11.14",
+    "mongoose-type-email": "^1.0.5",
+    "morgan": "~1.9.0",
+    "nodemailer": "^4.6.4",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.1.0"
+  },
+  "devDependencies": {}
+}
