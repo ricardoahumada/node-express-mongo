@@ -1,1 +1,52 @@
 curl -X POST http://localhost:8080/api/users -d "{\"name\":\"ricardo\",\"email\":\"ricardo@r.com\"}" -H "Content-Type:application/json"
+
+curl -X POST http://localhost:8080/api/pets -d "{\"nombre\":\"fuffy\",\"foto\":\"https://www.duiops.net/seresvivos/photogallery/photo00011389/033__.JPG\",\"edad\":3}" -H "Content-Type:application/json"
+
+db.pets.insertMany([
+    {        
+        "nombre": "max rex",
+        "foto": "https://www.duiops.net/seresvivos/photogallery/photo00000353/African%20Lion,%20Tanzania,%20Africa.jpg",
+        "edad": 2
+    },
+    {        
+        "nombre": "taxi luna",
+        "foto": "https://www.duiops.net/seresvivos/photogallery/photo00024204/159.JPG",
+        "edad": 3
+    },
+    {        
+        "nombre": "luna bob",
+        "foto": "https://www.duiops.net/seresvivos/photogallery/photo00013732/119.JPG",
+        "edad": 4
+    },
+    {        
+        "nombre": "luna bob",
+        "foto": "https://www.duiops.net/seresvivos/photogallery/photo00024204/170.JPG",
+        "edad": 5
+    },
+    {        
+        "nombre": "chach kat",
+        "foto": "https://www.duiops.net/seresvivos/photogallery/photo00019939/55.jpg",
+        "edad": 3
+    },
+    {        
+        "nombre": "taxi ginna",
+        "foto": "https://www.duiops.net/seresvivos/photogallery/photo00024204/Animals%20Cats%20Exotic_Fraiser,%20Persian%20Torti.jpg",
+        "edad": 7
+    },
+    {        
+        "nombre": "rex sebes",
+        "foto": "https://www.duiops.net/seresvivos/photogallery/photo00011389/040__.JPG",
+        "edad": 4
+    },
+    {        
+        "nombre": "sebes bob",
+        "foto": "https://www.duiops.net/seresvivos/photogallery/photo00011389/1327.jpg",
+        "edad": 9
+    },
+    {        
+        "nombre": "rex ginna",
+        "foto": "https://www.duiops.net/seresvivos/photogallery/photo00011389/155.JPG",
+        "edad": 3
+    }
+
+]);
