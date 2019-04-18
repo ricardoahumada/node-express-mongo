@@ -4,3 +4,5 @@ curl -X POST http://localhost:8080/api/users -d "{\"name\":\"ricardo\",\"email\"
 
 curl -X POST http://localhost:8080/api/pets -d "{\"nombre\":\"fuffy\",\"foto\":\"https://www.duiops.net/seresvivos/photogallery/photo00011389/033__.JPG\",\"edad\":3}" -H "Content-Type:application/json"
 
+curl -X POST http://localhost:8080/api/auth -d "{\"email\":\"ricardo@r.com\",\"password\":\"KaDAxu02\"}" -H "Content-Type:application/json"
+
