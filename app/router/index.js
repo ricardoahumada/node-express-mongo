@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const user = require('./user');
-
+const pet = require('./pet');
 
 // middleware to use for all requests
 router.use(function(req, res, next) {
@@ -15,6 +15,7 @@ router.get('/', function(req, res) {
 });
 
 router.use(user);
+router.use(pet);
 
 // FUNCTIONS FOR TRAINEDS
 
