@@ -4,5 +4,7 @@ curl -X POST http://localhost:8080/api/users -d "{\"name\":\"ricardo\",\"email\"
 
 curl -X POST http://localhost:8080/api/pets -d "{\"nombre\":\"fuffy\",\"foto\":\"https://www.duiops.net/seresvivos/photogallery/photo00011389/033__.JPG\",\"edad\":3}" -H "Content-Type:application/json"
 
+// AUTH
 curl -X POST http://localhost:8080/api/auth -d "{\"email\":\"ricardo@r.com\",\"password\":\"KaDAxu02\"}" -H "Content-Type:application/json"
 
+curl http://localhost:8080/api/pets_priv -H "authorization:  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1Y2I2NWIzZGI0MThjZTRlM2NiYTQxZTUiLCJuYW1lIjoicmljYXJkbyIsImVtYWlsIjoicmljYXJkb0ByLmNvbSIsImlhdCI6MTU1NTU4NzA0NywiZXhwIjoxNTU2MDE5MDQ3LCJzdGFsZXMiOm51bGx9.c71UYmWkTSZ9GUwD7_kfdPP2njzDJn2WfFc3e8O2cao"
